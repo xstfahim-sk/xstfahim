@@ -15,6 +15,7 @@ export default {
         accent: "var(--accent)",
         muted: "var(--muted)",
         "muted-foreground": "var(--muted-foreground)",
+        border: "var(--border)",
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
