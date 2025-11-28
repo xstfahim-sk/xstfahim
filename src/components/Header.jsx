@@ -39,7 +39,7 @@ const Header = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex-shrink-0">
-                        <a href="#" className="text-2xl font-bold tracking-tighter hover:text-accent transition-colors">
+                        <a href="https://xstfahim.online" className="text-2xl font-bold tracking-tighter hover:text-accent transition-colors">
                             xstfahim
                         </a>
                     </div>
@@ -55,6 +55,14 @@ const Header = () => {
                                     {link.name}
                                 </a>
                             ))}
+                            <a
+                                href="https://cv.xstfahim.online"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-accent text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-accent/90 transition-colors"
+                            >
+                                Download CV
+                            </a>
                             <button
                                 onClick={toggleTheme}
                                 className="p-2 rounded-full hover:bg-secondary text-muted-foreground hover:text-foreground transition-colors"
@@ -102,6 +110,15 @@ const Header = () => {
                                 {link.name}
                             </a>
                         ))}
+                        <a
+                            href="https://cv.xstfahim.online"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block bg-accent text-white px-4 py-2 rounded-full text-base font-medium hover:bg-accent/90 transition-colors text-center mx-3 mt-3"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            Download CV
+                        </a>
                     </div>
                 </motion.div>
             )}
