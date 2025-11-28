@@ -228,7 +228,7 @@ export default function UncommonPortfolio() {
             {/* Particle canvas */}
             <ParticleCanvas accent={config.accent} />
 
-            <header className="max-w-6xl mx-auto p-6 flex items-center justify-between">
+            <header className="max-w-6xl mx-auto px-6 pt-4 pb-0 flex items-center justify-between">
                 <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full flex items-center justify-center font-bold" style={{ background: `linear-gradient(135deg, ${config.accent}, #60a5fa)` }}>
                         {config.name.split(' ').map(s => s[0]).slice(0, 2).join('')}
@@ -255,7 +255,7 @@ export default function UncommonPortfolio() {
                 </div>
             </header>
 
-            <section className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <section className="max-w-6xl mx-auto px-6 pt-0 pb-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
                 <div className="col-span-7">
                     <motion.h1 initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.1 }} className="text-4xl md:text-6xl font-extrabold leading-tight">
                         {config.name}
