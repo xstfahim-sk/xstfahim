@@ -10,6 +10,7 @@ const Hero = () => {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}
+                    className="order-2 lg:order-1"
                 >
                     <h2 className="text-accent font-medium mb-4 tracking-wide">HELLO, I'M FAHIM</h2>
                     <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-6">
@@ -42,7 +43,7 @@ const Hero = () => {
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="relative"
+                    className="relative order-1 lg:order-2"
                 >
                     <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
                         <img
